@@ -1,0 +1,10 @@
+<h1>Bucket List Item</h1>
+<br>
+<header><%= @item.content %></header>
+<br> 
+
+<form action="/items/<%= @item.content %>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" id="submit" value="Delete Item">
+  <a href="/items/<%= @item.id %>/edit">Edit Item</a>
+</form>
