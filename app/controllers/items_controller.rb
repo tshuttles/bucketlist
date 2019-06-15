@@ -50,7 +50,15 @@ class ItemsController < ApplicationController
     end
   end 
   
-  patch '/items/:id' do 
+  patch '/items/:id' do
+    @item = Item.find_by_id(params[:id])
+    if params[:content] == ""
+      redirect "/items/#{@items.id}/edit"
+    else 
+      @item.content = params[:content]
+      @item.save 
+      redirect "/items/#{@item.id}"
+    end 
   end 
   
   delete '/items/:id' do 
