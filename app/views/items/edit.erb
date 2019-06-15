@@ -3,6 +3,8 @@
 <form action="/items/<%= @item.id %>" method="POST">
   <input id="hidden" type="hidden" name="_method" value="PATCH">
   <label>Edit Item: </label>
-  <input type="text" id="content" name="content" value="<%= @item.content %>"><br>
-  <input type="submit" id="submit" value="Edit Item">
+  <br>
+  <input type="text" id="content" name="content" value="<%= @item.content %>">
+  <br>
+  <input type="submit" id="submit" value="Edit!">
 </form> 

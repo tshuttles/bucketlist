@@ -1,10 +1,13 @@
 <h1>Your Bucket List</h1>
 <br>
 
-<ul>
+<ol>
 <% @items.each do |item| %>
   <li><%= item.content %></li>
 <% end %> 
-</ul>
+</0l>
 <br>
-<footer><a href="/items/new">Create New Item!</a></footer>
+<footer>
+  <a href="/items/new">Create New Item!</a>
+  <a href="/items">Edit An Item!</a>
+</footer>
