@@ -17,14 +17,14 @@ class ItemsController < ApplicationController
     end
   end
   
-  post 'items' do 
+  post '/items' do 
     if params[:content] == ""
       redirect '/items/new'
     else
       item = Item.create(:content => params[:content])
       item.user_id = session[:user_id]
       item.save
-      redirect to "/items"
+      redirect '/items'
     end
   end 
   
