@@ -18,7 +18,6 @@ class UsersController < ApplicationController
     end
   end 
   
-  
   get '/login' do 
     if logged_in?
       redirect "/items" 
@@ -36,5 +35,8 @@ class UsersController < ApplicationController
       redirect "/login"
     end
   end
+  
+  get '/logout' do 
+  end 
   
 end 
