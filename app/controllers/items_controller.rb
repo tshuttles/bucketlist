@@ -28,6 +28,16 @@ class ItemsController < ApplicationController
     end
   end 
   
+  get '/items/:id' do 
+  end 
   
+  get '/items/:id/edit' do 
+  end 
+  
+  patch '/items/:id' do 
+  end 
+  
+  delete '/items/:id' do 
+  end 
   
 end 
