@@ -1,7 +1,6 @@
 class UsersController < ApplicationController 
   
   get '/signup' do 
-    binding.pry
     if logged_in? 
       redirect "/items"
     else 
