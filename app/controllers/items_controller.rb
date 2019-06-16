@@ -62,7 +62,6 @@ class ItemsController < ApplicationController
   end 
   
   delete '/items/:id' do
-    # binding.pry
     @item = Item.find_by_id(params[:id])
     if @item.user_id == session[:user_id]
       @item.delete 
