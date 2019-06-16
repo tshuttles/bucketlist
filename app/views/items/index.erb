@@ -1,19 +1,21 @@
-<h1>Your Bucket List</h1>
+<h2>Your Bucket List</h2>
 <br>
 
 <ol type="1">
   <% @items.each do |item| %>
     <li><%= item.content %></li>
-  <% end %> 
+  <% end %>
 </ol>
 
 <br>
+<hr>
 <br>
 
 <footer>
-  <h4>Options:</h4>
+  <h4>OPTIONS</h4>
+  <br>
   <a href="/items/new">Create New Item</a>
   <br>
   <br>
-  <a href="/items">Edit Existing Item</a>
+  <p>To edit an existing item, type the ID number of the item in search bar. For example, "/items/1"</p>
 </footer>
