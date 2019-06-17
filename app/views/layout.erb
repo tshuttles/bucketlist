@@ -35,6 +35,12 @@
         <img src="https://media.nisbets.com/asset/core/prodimage/largezoom/cd807_y_bucket-red.jpg" alt="Bucket" style="width: 200px; height: 200px">
       </div>
       <footer class="branding">
+        <% if logged_in? %>
+          <br>
+          <a href="/logout"><input type="submit" value="LOGOUT"></a>
+        <% end %>
+        <br>
+        <br>
         <small>&copy; 2019 <strong>Bucket List</strong></small>
       </footer>
     </div>
