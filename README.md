@@ -7,7 +7,7 @@ Welcome to the Bucket List! This is my second project as a Flatiron school stude
 Clone the github repository by entering the following commands into your IDE terminal:
 ```git clone git@github.com:tshuttles/bucketlist.git```
 
-Change to the cloned Beautiful Billboard directory:
+Change to the cloned directory:
 ```cd bucketlist```
 
 Install all required gems:
@@ -19,7 +19,7 @@ Migrate the database:
 Initiate shotgun:
 ```shotgun```
 
-Then visit localhost:9393/signup to get started!
+Then visit localhost:9393 to get started!
 
 # Instructions
 
