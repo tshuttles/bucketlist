@@ -4,10 +4,10 @@ Welcome to the Bucket List! This is my second project as a Flatiron school stude
 
 # Installation
 
-Clone the github repository by entering the following commands into your IDE terminal:
+Clone the github repository by entering the following command into your terminal:
 ```git clone git@github.com:tshuttles/bucketlist.git```
 
-Change to the cloned directory:
+Change to the directory:
 ```cd bucketlist```
 
 Install all required gems:
