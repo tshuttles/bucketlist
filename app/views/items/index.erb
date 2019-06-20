@@ -3,7 +3,7 @@
 
 <ol type="1">
   <% @items.each do |item| %>
-    <li><a href="/items/<%= item.content %>"></a></li>
+    <li><a href="/items/<%= @item.id %>"><%= item.content %></a></li>
   <% end %>
 </ol>
 
@@ -16,6 +16,4 @@
   <br>
   <a href="/items/new">Create New Item</a>
   <br>
-  <br>
-  <p>To EDIT an existing item, type the ID number of the item in search bar. For example, "/items/1"</p>
 </footer>
