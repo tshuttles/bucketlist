@@ -3,7 +3,7 @@
 
 <ol type="1">
   <% @items.each do |item| %>
-    <li><%= item.content %></li>
+    <li><a href="/items/<%= item.content %>"></a></li>
   <% end %>
 </ol>
 
