@@ -21,9 +21,9 @@ class ItemsController < ApplicationController
     if params[:content] == ""
       redirect '/items/new'
     else
-      binding.pry
-      item = 
+      item = Item.create(:content => params[:content])
       item.user_id = current_user.id
+      item.save 
       redirect '/items'
     end
   end 
