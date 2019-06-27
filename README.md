@@ -1,4 +1,4 @@
-# BeautifulBillboard
+# BucketList
 
 Welcome to the Bucket List! This is my second project as a Flatiron school student.
 
